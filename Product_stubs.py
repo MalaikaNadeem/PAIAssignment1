@@ -1,3 +1,5 @@
+# SP23-BAI-008
+
 class Product:
     def __init__(self, name, amount, price):
         self.name = name
@@ -27,6 +29,17 @@ class Product:
               self.amount = self.amount - quantity
               totalPrice = self.get_price(quantity)
               print("The total price charged is: " + str(totalPrice))
+
+product1 = Product("Mobile", 10, 100000)
+product1.make_purchase(10)
+product1.make_purchase(5)
+
+product2 = Product("Laptop", 20, 200000)
+product2.make_purchase(25)
+
+product2 = Product("Pc", 100 , 10002000)
+product2.make_purchase(-2)
+
 
 
   

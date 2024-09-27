@@ -23,7 +23,7 @@ class Product:
           return total_cost
       
       
-      def make_purchase(self, quantity):
+    def make_purchase(self, quantity):
           if quantity > self.amount:
               raise Exception("Sorry, you requested more products than available.")
           else:
@@ -40,8 +40,8 @@ try:
     
     product2 = Product("Pc", 100 , 10002000)
     product2.make_purchase(-2)
-except exception as e:
-    print("Error: " + e)
+except Exception as e:
+    print(f"Error: {e}")
 
 
 
